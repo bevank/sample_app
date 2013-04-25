@@ -217,7 +217,7 @@ describe UsersController do
       response.should be_success
     end
     
-    it "should have the right title" do
+    it "this should have the right title" do
       get :edit, :id => @user
       response.should have_selector('title', :content => "Edit user")
     end
